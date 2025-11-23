@@ -19,7 +19,7 @@ public class M1ProjectTest : MonoBehaviour
         Stats aStats = Stats.Sum(a.GetBaseStats(), a.GetWeapon().GetBonusStats());
         Stats bStats = Stats.Sum(b.GetBaseStats(), b.GetWeapon().GetBonusStats());
 
-        if (aStats._spd > bStats._spd)
+        if (aStats._spd >= bStats._spd)
         {
             Debug.Log(a.GetName() + " attacca e " + b.GetName() + " difende");
             Round(a, b);
